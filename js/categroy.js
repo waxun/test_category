@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-17 17:23:33
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-22 21:59:09
+* @Last Modified time: 2016-11-22 22:28:47
 */
 
 'use strict';
@@ -32,6 +32,7 @@ function scrollY(_id){
 
 	var startY = 0,dy = 0,currentY = 0,maxValue = 100;
 	function touchstartHandler(e){
+		e.preventDefault();
 		// 在触摸开始的时候获取当前手指在Y轴上的落点
 		startY = e.touches[0].pageY;
 		aside_scroll_wrap.classList.remove('transitionAll');
