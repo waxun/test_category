@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 设置视口标签  让布局视口的大小等于手机设备的大小-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 头部区域 -->
+	<header class="jd_header">
+		<div class="left fl my_icons jd_icons_logo my_center">	
+		</div>
+		<a href="#" class="right fr">登录</a>
+		<div class="center my_icons jd_icons_search my_center_y">
+			<input type="search" placeholder="家纺超级品类日，领券满799减400！">
+		</div>
+	</header>
+
+	<!-- 焦点图区域 -->
+	<section class="course">
+		<ul class="course_wrap">
+			<li><a href="#"><img src="images/imgs/banner01.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/imgs/banner02.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/imgs/banner03.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/imgs/banner04.jpg" alt=""></a></li>
+		</ul>
+		<ol class="points_wrap"></ol>
+	</section>
+
+	<!-- 导航区域 -->
+	<nav class="jd_nav">
+		<ul class="clearfix">
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav01.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav02.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav03.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav04.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav05.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav06.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav07.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav08.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav09.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+			<li class="w20 fl">
+				<a href="">
+					<img src="images/icons/nav10.png" alt="">
+					<p>京东超市</p>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- 京东快报 -->
+	<section class="jd_news">
+		<div class="jd_news_wrap">
+			<div class="left fl">
+				<img src="images/icons/jd-news-tit.png" alt="">
+			</div>
+			<a href="#" class="right fr">| 更多</a>
+			<div class="center">
+				<!-- 
+					轮播的原理 
+					（1）克隆第0个li元素 追加到scroll_news里面去
+					（2）添加一个index信号量 自动累加
+					（3）在过渡的结束的时候去判断当前的index值，如果超出最后一张，立马瞬移会第0张，同时设置index的值为0
+				-->
+				<ul class="scroll_news">
+					<li class="one_txt_cut"><a href="#">我是新闻啊1我是新闻啊1我是新闻啊1我是新闻啊1我是新闻啊1我是新闻啊1</a></li>
+					<li class="one_txt_cut"><a href="#">我是新闻啊2</a></li>
+					<li class="one_txt_cut"><a href="#">我是新闻啊3</a></li>
+					<li class="one_txt_cut"><a href="#">我是新闻啊4</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- 京东秒杀 -->
+	<section class="jd_ms">
+		<div class="jd_ms_t clearfix">
+			<div class="fl jd_ms_txt my_icons jd_icons_clock my_center_y">
+				<span>京东秒杀</span>
+				<div class="count_wrap my__center_y">
+					<span>0</span>
+					<span>0</span>
+					<span>:</span>
+					<span>0</span>
+					<span>0</span>
+					<span>:</span>
+					<span>0</span>
+					<span>0</span>
+				</div>
+			</div>
+			<div class="fr jd_more">更多秒杀 ></div>
+		</div>
+		<div class="jd_ms_b">
+			<ul class="jd_srcoll_product clearfix">
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+				<li class="fl">
+					<a href="#">
+						<div class="product_item"><img src="images/imgs/sec01.jpg" alt=""></div>
+						<p class="price new_price">¥69</p>
+						<p class="price old_price">¥170</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 会场入口 -->
+	<section class="jd_venue top_line">
+		<div class="container clearfix">
+			<div class="w33 fl"><a href="#"><img src="images/imgs/item01.jpg" alt=""></a></div>
+			<div class="w33 fl"><a href="#"><img src="images/imgs/item02.jpg" alt=""></a></div>
+			<div class="w33 fl"><a href="#"><img src="images/imgs/item03.jpg" alt=""></a></div>
+		</div>
+	</section>
+
+	<!-- 产品楼层 -->
+	<section class="floor">
+		<div class="floor_container clearfix">
+			<div class="fl w50 floor_items right_line">
+				<div class="floor_txt">
+					<h4>秒杀了</h4>
+					<p>快回家拿钱了！！</p>
+				</div>
+				<div class="floor_product_wrap fr">
+					<img src="images/imgs/product01.jpg" alt="">
+				</div>
+			</div>
+			<div class="fl w50 floor_items">
+				<div class="floor_txt">
+					<h4>秒杀了</h4>
+					<p>快回家拿钱了！！</p>
+				</div>
+				<div class="floor_product_wrap fr">
+					<img src="images/imgs/product02.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 产品楼层 -->
+	<section class="floor top_line">
+		<div class="floor_container clearfix">
+			<div class="fl w50 floor_items  right_line">
+				<div class="floor_txt">
+					<h4>秒杀了</h4>
+					<p>快回家拿钱了！！</p>
+				</div>
+				<div class="floor_product_wrap fr">
+					<img src="images/imgs/product01.jpg" alt="">
+				</div>
+			</div>
+			<div class="fl w50 floor_items">
+				<div class="floor_txt">
+					<h4>秒杀了</h4>
+					<p>快回家拿钱了！！</p>
+				</div>
+				<div class="floor_product_wrap fr">
+					<img src="images/imgs/product02.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 产品楼层 -->
+	<section class="floor top_line">
+		<div class="floor_container clearfix">
+			<div class="fl w50 floor_items  right_line">
+				<div class="floor_txt">
+					<h4>秒杀了</h4>
+					<p>快回家拿钱了！！</p>
+				</div>
+				<div class="floor_product_wrap fr">
+					<img src="images/imgs/product01.jpg" alt="">
+				</div>
+			</div>
+			<div class="fl w50 floor_items">
+				<div class="floor_txt">
+					<h4>秒杀了</h4>
+					<p>快回家拿钱了！！</p>
+				</div>
+				<div class="floor_product_wrap fr">
+					<img src="images/imgs/product02.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

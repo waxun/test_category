@@ -1,0 +1,62 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-17 17:23:21
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-18 14:33:12
+*/
+
+
+
+/* 主体部分 */
+html,body{
+	height: 100%;
+}
+.cate_main{
+	height: 100%;
+	padding-top: 46px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cate_main_wrap{
+	height: 100%;
+	overflow: hidden;
+}
+.cate_main_wrap > .left{
+	height: 100%;
+	width: 75px;
+	overflow: hidden;
+}
+.cate_main_wrap > .right{
+	height: 100%;
+	margin-left: 75px;
+	padding: 10px 0 0 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.aside_scroll_wrap{}
+.aside_scroll_wrap > li{
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.article_scroll_wrap{}
+.product_item{
+	margin-top: 10px;
+}
+.product_item > h4{
+	line-height: 25px;
+}
+.product_item_info{
+	overflow: hidden;
+	background-color: #fff;
+}
+.product_item_info .img_wrap{
+	padding:0 10px;
+}
+.product_item_txt{
+	text-align: center;
+	line-height: 30px;
+}

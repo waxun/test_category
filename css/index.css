@@ -1,0 +1,259 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-15 11:38:48
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-17 15:20:37
+*/
+
+
+/* icons的大小 */
+.jd_icons_logo::before{
+	width: 56px;
+	height: 21px;
+	background-position: 0 -109px;
+}
+.jd_icons_search::before{
+	width: 20px;
+	height: 20px;
+	background-position: -60px -110px;
+	left: 10px;
+}
+.jd_icons_clock::before{
+	width: 17px;
+	height: 22px;
+	background-position: -84px -109px;
+	left: 10px;
+}
+/* 头部区域 */
+.jd_header{
+	height: 40px;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: 0;
+	z-index: 99999;
+	min-width: 320px;
+	max-width: 640px;
+	background-color: rgba(209,56,68,0);
+}
+.jd_header > .left{
+	width: 75px;
+	height: 40px;
+	position: relative;
+}
+.jd_header > .right{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+}
+.jd_header > .center{
+	height: 30px;
+	margin: 4px 50px 0 75px;
+	position: relative;
+}
+.jd_header > .center > input[type='search']{
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	text-indent: 28px;
+	outline: none;
+}
+
+/* 焦点图区域 */
+.course{
+	position: relative;
+	overflow: hidden;
+}
+.course .course_wrap{
+	position: relative;
+}
+.course .course_wrap li{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+.points_wrap{
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	text-align: center;
+}
+.points_wrap li{
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 1px solid #fff;
+	margin: 0 5px;
+}
+.points_wrap li.active{
+	background-color: #fff;
+}
+
+/* 导航区域 */
+.jd_nav{
+	padding-top: 10px;
+	background-color: #F3F3F3;
+}
+.jd_nav li img{
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+.jd_nav li p {
+	text-align: center;
+	line-height: 30px;
+}
+
+/* 京东快报 */
+.jd_news{
+	padding: 0 7px 5px;
+	background-color: #F3F3F3;
+}
+.jd_news_wrap{
+	height: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.jd_news_wrap .left{
+	width: 81px;
+	height: 30px;
+}
+.jd_news_wrap .left img{
+	width: 73px;
+    height: 16px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.jd_news_wrap .right{
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-indent: -10px;
+}
+.jd_news_wrap .center{
+	margin: 0 40px 0 81px;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.scroll_news{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.scroll_news li{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 5px;
+}
+
+/* 京东秒杀 */
+.jd_ms{
+	background-color: #fff;
+}
+.jd_ms_t{
+	height: 32px;
+	position: relative;
+}
+.jd_ms_t > .jd_ms_txt > span{
+	color: #ca1327;
+	letter-spacing: 5px;
+	font-size: 14px;
+	line-height: 32px;
+	padding-left: 36px;
+}
+.jd_ms_t .jd_more{
+	line-height: 32px;
+	padding-right: 10px;	
+}
+.count_wrap{
+	width: 90px;
+	height: 22px;
+	left: 120px;
+	/* 给父级添加font-size: 0; 可以去掉行内块默认的边距*/
+	font-size: 0;
+	text-align: center;
+}
+.count_wrap span{
+	display: inline-block;
+	background-color: #000;
+	font-size: 12px;
+	width: 10px;
+	height: 20px;
+	color: #fff;
+}
+.count_wrap span:nth-child(3n+1){
+	border-top-left-radius: 5px; 
+	border-bottom-left-radius: 5px; 
+}
+.count_wrap span:nth-child(3n+2){
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+}
+.count_wrap span:nth-child(3n){
+	background-color: transparent;
+	color: #000;
+}
+/*  京东秒杀主体 */
+.jd_ms_b{
+	overflow: scroll;
+	margin-top: 10px;
+}
+.jd_srcoll_product{
+	width: 888px;
+	height: 125px;
+}
+.product_item{
+	width: 90px;
+	height: 78px;
+	border-right: 1px solid #ccc;	
+	padding: 0 10px;
+}
+.product_item > img{
+	width: 68px;
+	height: 68px;
+	margin: 0 auto;
+}
+.jd_srcoll_product .price{
+	text-align: center;
+}
+.jd_srcoll_product .new_price{
+	font-size: 18px;
+	color: #F35353;
+}
+.jd_srcoll_product .old_price{
+	font-size: 12px;
+	text-decoration: line-through;
+}
+
+/* 产品区域 */
+.floor_items{
+	position: relative;
+	background-color: #fff;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.floor_txt{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 55%;
+}
+.floor_product_wrap{
+	width: 45%;
+}

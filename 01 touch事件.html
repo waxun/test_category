@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <style>
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+        </style>
+    </head>
+    <body>
+    <div class="box"></div>
+    <script type="text/javascript">
+    var box = document.querySelector('.box');
+    // touch必须用addEvent去兼容 去on第一次能监听到，后面就监听不到了
+    
+    /*touch监听的是手指在屏幕上滑动，可以接受多个手指，手指的一些参数在touchlist数组里面，一般我们会得到第0位上的手指
+
+    */
+
+    // 移动开始
+    box.addEventListener('touchstart', function(e){
+    	console.log(e);
+    })
+    // 滑动持续中
+    box.addEventListener('touchmove', function(e){
+    	console.log(e);
+    })
+    // 滑动结束
+    box.addEventListener('touchend', function(e){
+    	console.log(e);
+    })
+    </script>
+    </body>
+</html>

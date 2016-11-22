@@ -1,0 +1,92 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-18 14:32:24
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-18 16:40:31
+*/
+/* 公共的自定义checkbox类 */
+.checkbox_wrap{
+	width: 40px;
+	height: 32px;
+	position: relative;
+}
+.jd_icons_sitelogo::before{
+	width: 15px;
+	height: 10px;
+	left: 0;
+	-webkit-background-size: 120px;
+	background-size: 120px;
+}
+.jd_icons_check::before{
+	width: 20px;
+    height: 20px;
+    background-position: -180px -90px;
+}
+.jd_icons_checkd::before{
+	background-position: -180px -70px;
+}
+.checkbox_wrap > input[type="checkbox"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+/*  头部 */
+.jd_top_bar{
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	min-width: 320px;
+	max-width: 640px;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: -webkit-linear-gradient(top,#FDFDFD,#F1F1F1);
+	border-bottom: 1px solid #ccc;
+	z-index: 99998;
+}
+.jd_top_bar > .left{
+	width:40px;
+	height: 45px;
+	position: relative;
+}
+.jd_top_bar > .right{
+	width:42px;
+	height: 45px;
+	position: relative;
+}
+.jd_top_bar > .center{
+	height: 32px;
+	margin: 7px 42px 0 40px;
+}
+.jd_top_bar > .center > h4{
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+.jd_top_bar > .center > input[type="search"]{
+	height: 32px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	line-height: 32px;
+	text-indent: 10px;
+	outline: none;
+}
+.jd_icons_back::before{
+	width: 13px;
+    height: 20px;
+    background-position: -24px 0;
+}
+.jd_icons_menu::before{
+	width: 18px;
+    height: 19px;
+    background-position: -61px 0;
+}
