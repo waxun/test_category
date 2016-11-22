@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-17 17:23:33
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-18 11:30:00
+* @Last Modified time: 2016-11-22 21:59:09
 */
 
 'use strict';
@@ -37,6 +37,7 @@ function scrollY(_id){
 		aside_scroll_wrap.classList.remove('transitionAll');
 	}
 	function touchmoveHandler(e){
+		e.preventDefault();
 		// 获取滑动的距离
 		dy = e.touches[0].pageY - startY;
 		// 需要在move的时候控制最大值和最小值
